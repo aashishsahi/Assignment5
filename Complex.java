@@ -10,13 +10,17 @@ public class Complex {
 		System.out.print("Enter imaginary part: ");
 		imag = sc.nextDouble();
 		sc.close();
-		if(imag>=0)
+		if(imag>0)
 		{
 			System.out.println("Complex number is: " + real + "+" + imag + "i");
 		}
 		else if(imag<0)
 		{
 			System.out.println("Complex number is: " + real + imag + "i");
+		}
+		else
+		{
+			System.out.println("Complex number is: " + real);
 		}
 	}
 
